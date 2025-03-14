@@ -10,7 +10,7 @@ const app = express();
 // Init Middleware
 app.use(express.json());
 const cors = require('cors');
-app.use(cors());
+app.use(cors()); // Izinkan
 
 // Define Routes
 app.use('/api/auth', require('./server/routes/api/auth'));
